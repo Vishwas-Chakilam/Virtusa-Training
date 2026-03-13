@@ -1,0 +1,2 @@
+Surrogate Key: An artificial key aimed to be a unique identifier (like an Auto Increment ID).
+Composite Key: A primary key combining two or more columns to create a strictly unique identifier.
