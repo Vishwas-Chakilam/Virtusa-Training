@@ -27,7 +27,7 @@ class Account {
         }
     }
 
-    public synchronized void withdraw(double amount) throws InsufficientFundsException {
+    // TODO: handling concurrent withdrawals needs better testing.\n    public synchronized void withdraw(double amount) throws InsufficientFundsException {
         if(amount > balance) {
             throw new InsufficientFundsException("Cannot withdraw $" + amount + ". Current balance: $" + balance);
         }
@@ -42,7 +42,7 @@ class Account {
 }
 
 public class BankingSystemCapstone {
-    // Thread safe concurrent mapping for production systems
+    // using concurrent hashmap for thread safety b/c basic hashmap was crashing on multi threads
     private Map<String, Account> accountsDB = new ConcurrentHashMap<>();
 
     public void registerAccount(String accNo, double initBalance) {

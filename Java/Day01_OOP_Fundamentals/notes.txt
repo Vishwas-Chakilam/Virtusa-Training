@@ -1,34 +1,13 @@
-Day 1: Object-Oriented Programming (OOP) Fundamentals In-Depth
-
-1. Introduction to Object-Oriented Design
-Object-Oriented Programming (OOP) is a paradigm centered around objects and data rather than "actions" and "logic." Historically, procedural programming struggled with data security and scalability because functions could access and modify global data freely. OOP introduces boundaries by encapsulating state and behavior within localized structures called 'classes' and their instantiations called 'objects'.
-
-2. The Four Pillars of OOP Explained
-A. Encapsulation
-Encapsulation acts as a protective shield that prevents data from being accessed directly. 
-- Implementation Details: We declare instance variables as `private` to ensure they are hidden from other classes. Interaction is mandated through `public` accessor (getter) and mutator (setter) methods.
-- Why It Matters: This allows internal structures of objects to change without affecting any external interacting code (Loose Coupling). It also enforces validation logic uniformly whenever data is set.
-
-B. Inheritance (IS-A Relationship)
-A subclass inherits fields and methods from a superclass using the `extends` keyword.
-- Hierarchical Scaling: It enables a logical hierarchy (e.g., Vehicle -> Car -> SUV).
-- Types of Inheritance: Single, Multi-level, and Hierarchical. Java strictly prohibits multiple inheritance through classes to avoid the Diamond Problem (ambiguity when two parents define the identical method signatures).
-- Constructor Execution: Conceptually, a subclass constructor always invokes the `super()` default constructor first implicitly unless stated otherwise, ensuring the parent state is fully materialized before building the child.
-
-C. Polymorphism (Many Forms)
-Polymorphism ensures that the most specific implementation of a method is called.
-- Compile-Time (Static Binding): Achieved via Method Overloading (same method name, different argument lists). The compiler decides which method to invoke based on signatures.
-- Run-Time (Dynamic Binding): Achieved via Method Overriding (same signature in subclass). When a parent reference points to a child object (`Animal a = new Dog()`), Java uses dynamic method dispatch to call the `Dog`'s overridden method at runtime rather than the parent's.
-
-D. Abstraction
-Focusing on the "what" rather than the "how."
-- Abstract Classes (`abstract`): Provide a common base implementation and defining certain required methods that subclasses must configure via abstract signatures. Can contain state fields.
-- Interfaces (`interface`): Act purely as contracts. Originally only allowed abstract signatures, but Java 8 introduced `default` and `static` methods to provide backward-compatible implementations. Typically used to map out unrelated behaviors across different hierarchies (e.g., `Serializable`, `Runnable`).
-
-3. Class vs Object
-- Class: The architectural blueprint. Takes up no heap memory for state variables (only metadata in the Method Area).
-- Object: Holds the runtime state footprint. Instantiated via the `new` operator, taking up dynamic memory space in the Java Heap.
-
-4. Essential Design Principles (SOLID Introduction)
-- Single Responsibility: A class should have one and only one reason to change.
-- Open/Closed: Software entities should be open for extension (inheritance), but closed for modification (don't rewrite existing secure foundations).
+Day 1: OOP Basics
+    
+    * Encapsulation: Hiding data w/ private vars + getters/setters. Good practice.
+    * Inheritance: IS-A relationship. extends keyword. 
+      Note to self: Java doesn't support multiple inheritance w/ classes (diamond problem), only interfaces.
+    * Polymorphism: Many forms. 
+      - Method Overloading (compile time) - same name, diff args.
+      - Method Overriding (runtime) - child provides specific implementation.
+    * Abstraction: abstract classes & interfaces. 
+      Interfaces are basically contracts.
+      
+    // struggled w/ overriding rules today, need to review static binding vs dynamic dispatch.
+    

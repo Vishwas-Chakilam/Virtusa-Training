@@ -1,27 +1,13 @@
-Day 3: Static Memory Contexts, Access Visibility, and Packages
-
-1. The 'Static' Context
-The `static` keyword shifts the scope of a variable or method from being an instance-level property to a class-level property.
-- Static Variables (Class Variables): When a variable is declared static, a single copy is created and shared uniformly across every object created from that class. It is instantiated the moment the ClassLoader imports the class into JVM memory. It sits in a special memory segment called the 'Metaspace' (formerly PermGen).
-- Static Methods: Methods that exist independently of objects. They cannot invoke `this` or access non-static instance fields, because they exist globally before any object is necessarily created.
-- Static Blocks: Code blocks framed as `static { ... }` that execute sequentially the literal instant the class is read into memory, frequently used to initialize complicated configuration properties before the program truly begins.
-- Use-case rules conventions: Utility classes (e.g., `java.lang.Math`) depend heavily on static signatures to operate.
-
-2. Access Modifiers: The Four Pillars of Visibility
-Access modifiers dictate exactly which external pieces of a program can see or alter a specific variable, class, or method. It strictly manages abstraction and encapsulation limits.
-- `private`: The tightest lock. Only methods spanning within the exact same Class literal can read or invoke it.
-- `default` (Package-Private): The absence of a modifier string. Data is accessible by any class living inside the exact same package directory. External packages are blind to it, regardless of subclassing.
-- `protected`: Slightly broader than default. Any class in the matching package can access it, AND any subclass located globally in differing packages can also access it through an inheritance linkage only.
-- `public`: Global access. Any script, any package anywhere in the running JVM can invoke the member directly.
-
-3. Package Architectures
-A Package is essentially a namespace-encapsulated directory system. They serve several crucial programming infrastructure concepts:
-- Prevention of Naming Collisions: Allowing multiple developers to name a file `Helper.java` under separate namespaces (e.g., `com.company.network.Helper` vs `com.company.database.Helper`).
-- Encapsulation Checkpoint: Combining access modifiers with logical package distributions hides internal logic packages from the main executing surface packages.
-- Locating external code: `import` statements instruct the compiler precisely where across the classpath to dynamically link external binaries needed by the JVM logic currently executing.
-
-4. The 'final' Keyword
-Like access modifiers, `final` explicitly modifies how definitions behave, strictly restricting further changes.
-- Final Variables: Establish constants (`public static final int MAX_SIZE = 10;`). Assigning to them post-initialization throws a compiler error.
-- Final Methods: Strictly prevents subclasses from mathematically Overriding the method's logic. Locks the function in place across inheritance trees.
-- Final Classes: The utmost class restriction lock. Indicates the class can never be subclassed or extended by anything (e.g., `java.lang.String`). Inherently prevents malicious subclass interception of behavior.
+Day 3: Static & Access Modifiers
+    
+    - static keyword means belongs to the Class, not the object. 
+      (can't use 'this' in a static method!!)
+      
+    Access Modifiers:
+    1. private: only inside same class
+    2. default: package level (no keyword)
+    3. protected: package + child classes (even in diff packages)
+    4. public: everywhere
+    
+    final keyword = constant. final class cannot be extended. String is final.
+    
