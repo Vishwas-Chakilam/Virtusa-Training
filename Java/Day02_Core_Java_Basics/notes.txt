@@ -1,0 +1,30 @@
+Day 2: Core Java Basics Theory
+
+1. The Java Platform Architecture
+Java executes code in a two-step process: First, the Java compiler (javac) converts human-readable `.java` files into `.class` bytecode files. Second, the Java Virtual Machine (JVM) interprets and Just-In-Time (JIT) compiles that bytecode natively onto the respective operating system environment. This grants the platform its 'Write Once, Run Anywhere' (WORA) philosophy.
+
+2. Primitives and Memory Allocation Types
+Java possesses two main data families: Primitives and References.
+- Primitive Types (8 types): 
+  - Integer family: `byte` (8-bit), `short` (16-bit), `int` (32-bit), `long` (64-bit).
+  - Floating family: `float` (32-bit), `double` (64-bit).
+  - Character family: `char` (16-bit Unicode).
+  - Boolean: `boolean` (size isn't strictly defined, depends on JVM mapping).
+  These primitives live directly on the Thread Stack for extremely fast access.
+- Reference Types (Objects): `String`, arrays, class instances. The reference variable (a pointer) sits on the Stack, while the actual heavy object data exists in the Heap memory.
+
+3. Type Casting Mechanisms
+Casting transforms a variable from one data type to another. 
+- Widening Casting (Implicit): Converting smaller types to larger types automatically `byte -> short -> char -> int -> long -> float -> double`. No data is lost.
+- Narrowing Casting (Explicit): Manually truncating a larger type into a smaller one `(int) myDouble`. Data precision easily gets truncated or lost during narrowing (overflow wrapping).
+
+4. Operators Deep Dive
+- Arithmetical: `+, -, *, /, %`
+- Relational (Comparison): Evaluates two operands, returning a boolean (`==, !=, >, <, >=, <=`).
+- Logical: `&&` (Logical AND, short-circuits), `||` (Logical OR, short-circuits). Short-circuiting means Java skips evaluating the right-side operand if the result is already decided from the left operand. This is computationally efficient.
+- Bitwise: Used to manipulate raw bits globally. Operations like `&` don't short-circuit. Shifts like `<<` multiply the underlying integer binary structures rapidly.
+
+5. Advanced Control Flow Constructs
+- Conditional: `if / else if / else` evaluates conditions linearly. `switch` statement is optimized heavily by the compiler using lookup tables (often compiling directly to `tableswitch` or `lookupswitch` bytecodes, avoiding chained boolean computations). In modern Java, switch can also yield values.
+- Iterative Repetition: `for` handles fixed known iterations. `while` processes indefinite cyclic events dependent on variables. `do-while` ensures execution always happens initially at least once before checking validity.
+- Jump directers: `break` exits entire blocks of flow constructs prematurely. `continue` instantly skips the remaining block in an iteration and forces the loop criteria checker to trigger immediately for the next cycle. Labels (`outer:` / `inner:`) can break/continue deeply nested matrices.
