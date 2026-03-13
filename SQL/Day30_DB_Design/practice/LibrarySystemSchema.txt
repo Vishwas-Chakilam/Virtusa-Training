@@ -1,0 +1,21 @@
+-- 3NF Schema:
+
+Table: Authors
+- AuthorID (PK)
+- Name
+
+Table: Books
+- BookID (PK)
+- Title
+- AuthorID (FK)
+
+Table: Borrowers
+- BorrowerID (PK)
+- Name
+- Email
+
+Table: Loans
+- LoanID (PK)
+- BookID (FK)
+- BorrowerID (FK)
+- DueDate

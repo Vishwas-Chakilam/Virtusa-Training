@@ -1,0 +1,5 @@
+RDBMS Key Advantages:
+1. Ease of Data Retrieval
+2. Minimal Data Redundancy
+3. Data Integrity and Accuracy
+4. High Security

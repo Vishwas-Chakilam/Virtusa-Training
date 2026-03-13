@@ -1,0 +1,4 @@
+Primary Key: Uniquely identifies each row.
+Foreign Key: Points to a primary key in another table, enforces referential integrity.
+Unique Key: Ensures all values in column are different.
+Candidate Key: Columns that can qualify as a primary key.

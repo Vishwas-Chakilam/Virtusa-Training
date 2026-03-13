@@ -1,0 +1,9 @@
+Heap Area: 
+- Used for dynamic memory allocation for Java objects.
+- Shared among all threads.
+- If it fills up, results in OutOfMemoryError.
+
+Stack Area:
+- Used for execution of a thread (method frames, primitive local variables).
+- Private to each thread.
+- If it fills up, results in StackOverflowError.
