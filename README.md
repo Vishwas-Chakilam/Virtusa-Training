@@ -1,32 +1,33 @@
-# Virtusa Pre-Onboarding Training Tracker
+# Virtusa Pre-Onboarding Training
 
-Welcome to my **Virtusa Pre-Onboarding Training** progress tracker! This repository is designed to comprehensively track my day-to-day learning progress across the 12-week training program. 
+This is where I've kept all my work for the Virtusa training program. I’ve organized everything into two main parts: my daily learning notes and the final mini-projects I completed for evaluation.
 
-## 📖 Program Overview
-The training program is structured to build a strong foundation in backend development, database management, and modern programming paradigms. 
+### 📂 Project Structure
 
-The curriculum is divided into three primary subjects:
-1. **Java** (Day 1 – Day 25)
-2. **SQL** (Day 26 – Day 30)
-3. **Python** (Day 37 – Day 65)
+Here is a quick look at how the files are organized:
 
-## 🛠️ Technologies
-- **Java**: OOP, Core Java, Collections, Java 8 Features, Multithreading, JVM Internals
-- **Database**: RDBMS, SQL, Joins, Normalization
-- **Python**: Core Concepts, Scripting, Flow Control, OOP, File Handling, Regex
+```text
+.
+├── MINI PROJECTS ASSIGNMENT EVALUATION
+│   ├── Java
+│   │   └── README.md
+│   ├── Python
+│   │   └── README.md
+│   └── SQL
+│       ├── ERDDiagram.png
+│       ├── Hospital_Management_Capstone.sql
+│       ├── PlantUML Diagram.png
+│       └── README.md
+├── NOTES
+│   ├── Java
+│   ├── Python
+│   └── SQL
+└── README.md
+```
 
-## 🗺️ Learning Roadmap
-- **Weeks 1-5 (Java)**: Mastering Java from OOP fundamentals to advanced threading and internals.
-- **Week 6 (SQL)**: Diving into relational databases, writing queries, and understanding design principles.
-- **Weeks 8-13 (Python)**: Learning Python as an additional language, covering scripts up to OOP.
+### 🚀 What's Inside?
 
-## 🗂️ How to Navigate the Repo
-- Each subject has its own root directory (`Java/`, `SQL/`, `Python/`).
-- Inside each subject folder, there is a day-wise directory (e.g., `Day01_OOP_Fundamentals/`).
-- Inside each Day folder, you will find:
-  - `notes.md`: Key concepts and explanations learned that day.
-  - `examples/`: Sample code and programs.
-  - `practice/`: Practice exercises and solutions.
-- There is also a `Mini_Project/` folder under each technology to host the culminating project.
+*   **MINI PROJECTS**: These are the capstone assignments for Java (Quiz System), Python (Resume Analyzer), and SQL (Hospital Management). Each folder has its own README explaining the project in detail.
+*   **NOTES**: My day-to-day learning notes and practice scripts for Java, Python, and SQL.
 
-Happy learning! 🚀
+Everything is kept simple and easy to find for the evaluation. Thanks for checking out my progress!
