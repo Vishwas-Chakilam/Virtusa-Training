@@ -1,24 +1,21 @@
-# SQL Project: Hospital Management & Patient Analytics System
+# SQL Project: Hospital Management & Patient Analytics
 
 ## Problem Statement
-Hospitals need efficient systems to manage patient records and analyze treatment data.
+Healthcare providers require structured database systems to manage complex patient records, doctor schedules, and treatment costs.
 
 ## Objectives
-- Design a database to store patient, doctor, and treatment data
-- Perform analysis on hospital operations
+- Create a comprehensive schema for medical data management
+- Perform analytical queries to improve hospital operations
 
-## Database Tables
-- **Patients** (patient_id, name, age, gender)
-- **Doctors** (doctor_id, name, specialization)
-- **Appointments** (appointment_id, patient_id, doctor_id, date)
-- **Treatments** (treatment_id, patient_id, diagnosis, cost)
+## Key Features
+- Centralized tracking for Patients, Doctors, and Appointments
+- Monthly revenue calculation and financial tracking
+- Disease frequency analysis and trend identifying
+- Doctor performance and consultation metrics
 
-## Key Tasks
-- Find most consulted doctors
-- Calculate total revenue per month
-- Identify most common diseases
-- Track patient visit frequency
-- Analyze doctor performance
+## Technology Suggestions
+- SQL (Relational database design)
+- Aggregation and Join operations
 
 ## Expected Outcome
-A robust database system that helps in managing hospital data and extracting insights.
+A scalable database solution that provides actionable insights into patient care and hospital administration.

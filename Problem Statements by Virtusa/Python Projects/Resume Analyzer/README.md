@@ -1,19 +1,21 @@
 # Python Project: Resume Analyzer & Job Matcher
 
 ## Problem Statement
-Fresh graduates often struggle to tailor resumes for job roles. Build a Python tool that analyzes resumes and matches them with suitable job descriptions.
+Fresh graduates often struggle to tailor resumes for specific job roles, leading to lower shortlisting rates.
 
 ## Objectives
-- Extract key information from resumes
-- Compare skills with job requirements
-- Provide a match score and suggestions
+- Extract key skills and information from resumes
+- Match candidate profiles with job requirements automatically
 
 ## Key Features
-- Upload/read resume (PDF or text)
-- Keyword extraction using NLP (e.g., nltk or spaCy)
-- Match resume skills with job description
-- Score the resume (e.g., 75% match)
-- Suggest missing skills
+- Resume parsing (PDF or Text)
+- Keyword extraction using NLP (NLTK or spaCy)
+- Match percentage calculation
+- Skill gap analysis and suggestions
+
+## Technology Suggestions
+- Python (NLP libraries)
+- File handling (PyPDF2 or similar)
 
 ## Expected Outcome
-A smart assistant that helps users improve resumes and increases chances of getting shortlisted.
+A smart assistant that helps users optimize their resumes and improves their chances of landing interviews.
