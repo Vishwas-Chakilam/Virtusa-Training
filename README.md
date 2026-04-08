@@ -4,30 +4,60 @@ This is where I've kept all my work for the Virtusa training program. I’ve org
 
 ### 📂 Project Structure
 
-Here is a quick look at how the files are organized:
+Hey Look this out before you go!:
 
 ```text
 .
-├── MINI PROJECTS ASSIGNMENT EVALUATION
-│   ├── Java
-│   │   └── README.md
-│   ├── Python
-│   │   └── README.md
-│   └── SQL
-│       ├── ERDDiagram.png
-│       ├── Hospital_Management_Capstone.sql
-│       ├── PlantUML Diagram.png
-│       └── README.md
-├── NOTES
-│   ├── Java
-│   ├── Python
-│   └── SQL
-└── README.md
+├── Virtusa-PreOnboarding-Training
+│   ├── Notes & Program by me
+│   │   ├── Java
+│   │   ├── Python
+│   │   ├── Resources by Virtusa
+│   │   │   └── daywise syllabus.pdf
+│   │   └── SQL
+│   ├── Problem Statements by Virtusa
+│   │   ├── Java Projects
+│   │   │   ├── QuizSystem
+│   │   │   │   ├── src
+│   │   │   │   │   └── quiz
+│   │   │   │   │       ├── Question.class
+│   │   │   │   │       ├── Question.java
+│   │   │   │   │       ├── QuizApp$1.class
+│   │   │   │   │       ├── QuizApp.class
+│   │   │   │   │       ├── QuizApp.java
+│   │   │   │   │       ├── QuizManager.class
+│   │   │   │   │       └── QuizManager.java
+│   │   │   │   └── README.md
+│   │   │   └── SafeLog Validator
+│   │   │       ├── PasswordValidator.class
+│   │   │       ├── PasswordValidator.java
+│   │   │       └── README.md
+│   │   ├── Python Projects
+│   │   │   ├── FareCalc Optimizer
+│   │   │   │   ├── README.md
+│   │   │   │   └── fare_calc.py
+│   │   │   ├── Resume Analyzer
+│   │   │   │   ├── README.md
+│   │   │   │   ├── app.py
+│   │   │   │   ├── constants.py
+│   │   │   │   ├── nlp_utils.py
+│   │   │   │   └── requirements.txt
+│   │   │   └── Smart Expense Tracker
+│   │   │       ├── README.md
+│   │   │       ├── app.py
+│   │   │       ├── expenses.csv
+│   │   │       └── requirements.txt
+│   │   └── SQL Projects
+│   │       ├── Digital Library
+│   │       │   ├── DigitalLibrary.sql
+│   │       │   └── README.md
+│   │       └── Hospital Management System
+│   │           ├── ERDDiagram.png
+│   │           ├── Hospital Management & Patient Analytics System.sql
+│   │           ├── PlantUML Diagram.png
+│   │           └── README.md
+└── └── README.md
+
 ```
-
-### 🚀 What's Inside?
-
-*   **MINI PROJECTS**: These are the capstone assignments for Java (Quiz System), Python (Resume Analyzer), and SQL (Hospital Management). Each folder has its own README explaining the project in detail.
-*   **NOTES**: My day-to-day learning notes and practice scripts for Java, Python, and SQL.
 
 Everything is kept simple and easy to find for the evaluation. Thanks for checking out my progress!
