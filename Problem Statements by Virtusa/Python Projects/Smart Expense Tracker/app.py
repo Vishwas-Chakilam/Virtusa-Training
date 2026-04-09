@@ -124,4 +124,4 @@ else:
         st.bar_chart(data=months, x="Month", y="Amount")
 
 st.markdown("---")
-st.caption("Expense Tracker v1.0 • Created for Personal Use")
+st.caption("Smart Expense Tracker")

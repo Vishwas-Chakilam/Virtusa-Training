@@ -54,7 +54,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def main():
-    st.title("🚀 Pro-Grade AI Resume Matcher")
+    st.title("Resume Analyzer")
     st.markdown("---")
 
     with st.sidebar:
@@ -68,7 +68,7 @@ def main():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("📋 Job Description")
+        st.subheader("Job Description")
         jd_text = st.text_area("Paste the JD here...", height=250, placeholder="Required skills, responsibilities...")
 
     with col2:
