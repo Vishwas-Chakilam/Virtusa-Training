@@ -1,4 +1,0 @@
-Useful JVM Flags:
--Xms : Set initial Java heap size.
--Xmx : Set maximum Java heap size.
--XX:+PrintGCDetails : Tells JVM to log GC execution details.

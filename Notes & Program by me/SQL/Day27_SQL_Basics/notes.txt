@@ -1,9 +1,0 @@
-Day 27: SQL Commands
-    
-    DDL (Data Def): CREATE, ALTER, DROP, TRUNCATE (truncate is faster than delete, resets table structure)
-    DML (Data Manip): INSERT, UPDATE, DELETE
-    DCL (Data Control): GRANT, REVOKE
-    TCL (Transact Control): COMMIT, ROLLBACK, SAVEPOINT
-    
-    // Need to remember that DELETE can be rolled back, TRUNCATE cannot.
-    

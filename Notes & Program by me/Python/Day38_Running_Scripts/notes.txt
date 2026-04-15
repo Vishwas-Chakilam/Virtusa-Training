@@ -1,9 +1,0 @@
-Day 38: Python Execution
-    
-    GIL (Global Interpreter Lock): Python (CPython specifically) only runs one thread at a time for CPU bound tasks. 
-    // multithreading in python is kinda fake for cpu stuff, use multiprocessing instead.
-    
-    Virtual Environments (venv): Super important!!! 
-    python -m venv env_name 
-    Always use venv per project so dependencies (pip) don't conflict globally.
-    
