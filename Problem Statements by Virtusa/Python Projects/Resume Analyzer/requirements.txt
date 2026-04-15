@@ -1,5 +1,0 @@
-nltk
-PyPDF2
-matplotlib
-streamlit
-
